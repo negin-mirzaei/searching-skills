@@ -1,0 +1,33 @@
+/* a margin collapse */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+  }
+  
+  .box1 {
+    margin-bottom: 20px;
+  }
+  
+  .box2 {
+    margin-top: 30px;
+  }
+
+  /* fix margin collapse */
+  section {
+    background: blue;
+  }
+  
+  p {
+    background: lightblue;
+    margin: 1em 0;
+  }
+  
+  section.flow-root {
+    display: flow-root;
+  }
+  
+  section.flex {
+    display: flex;
+    flex-direction: column;
+  }
